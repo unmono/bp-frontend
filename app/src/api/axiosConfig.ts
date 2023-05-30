@@ -16,9 +16,6 @@ export const bpGet = async (
     );
   } catch(error: any) {
     if(error.response) {
-      // if(error.response.status == 401) {
-      //
-      // }
       throw json({
         code: error.response.status,
         message: error.response.data.detail,
